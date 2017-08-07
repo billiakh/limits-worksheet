@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Limits}
+\author{Veer Arjun Singh }
+\date{August 8th, 2017}
+
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{mathtools}
+
+\newenvironment{questions} {
+    \renewcommand{\a}[1]{\hfill [##1]}
+    \begin{enumerate}[label=Q. \arabic*]
+    \def \q{\item}
+} {
+    \end{enumerate}
+}
+
+\newcommand{\limit}[2]{\lim_{#1 \; \to \; #2}}
+
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+\let \oldabs \abs
+\makeatletter
+\def \abs{\@ifstar{\oldabs}{\oldabs*}}
+
+
+\begin{document}
+
+    \maketitle
+
+    \begin{questions}
+        \q Find $$ \limit{x}{2} \frac{x^2-3x+2}{x^2-4} $$
+        \a{$\frac{1}{4}$}
+        
+        \q Find $$ \limit{x}{0^+} \frac{1}{x} $$
+        \a{$\infty$}
+        
+        \q Find $$ \limit{x}{0^-} \frac{1}{x} $$
+        \a{$\infty$}
+        
+        \q List some properties of limits.
+        
+        \q $$ \limit{x}{1^-} \frac{x^2+2x-3}{\abs{x-1}} $$
+        \a{$-4$}
+    \end{questions}
+
+\end{document}
