@@ -16,4 +16,4 @@ Don't know Git, or Latex? Don't worry, start an issue with the desired questions
 The questions environment is a really basic environment which just consists of a labelled ordered list, in which questions could be added with `\q` and answers with `\a{answer-text}`.
 
 ### The `\abs` command
-The `\abs` command is 'inverted', the starred-command would be called when the non-starred version is used, and vice versa
+The `\abs` command is 'inverted', the starred-command would be called when the non-starred version is used, and vice versa.
